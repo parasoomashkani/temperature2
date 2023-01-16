@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>weather</title>
+	<meta charset="UTF-8" />
+</head>
+<link rel="stylesheet" href="styles.css"/>
+<link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script><body>
+	<div id="app"></div>
+	<div class="home">
+		<h1>Weather</h1>
+		<form class="search-form" id ="search-form">
+			 <div class="row">
+					 <div class="col-9">
+							 <input
+							 type="search"
+							 placeholder="Type a city.."
+							 autofocus="on"
+							 autocomplete="off"
+							 id="city-input"
+							 class="form-control shadow-sm"
+						 />
+					 </div>
+					 <div class="col-2">
+							 <input
+							 type="submit"
+							 value="Search"
+							 class="form-control btn btn-primary shadow-sm"
+						 />
+					 </div>
+					
+			 </div>
+</form>
+	
+
+<h4 id ="city">Tehran</h4>
+<h5 id = "date"></h5>
+<div class="row">
+	 <div class="col-6">
+		 <div class="clearfix">
+			 <img
+				 src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+				 alt="Cloudy icon"
+				 class="weather-icon float-left"
+			 />
+			 <div class="float-left">
+				 <span class="temperature" id="temperature">2</span
+				 ><span class="units">
+					 <a href="#" id="celsius-link">°C</a> |
+					 <a href="#" id="fahrenheit-link">°F</a>
+				 </span>
+			 </div>
+		 </div>
+	 </div>
+	 <div class="col-5">
+<ul>
+	 <li>fair</li>
+	 <li>9°/-5°</li>
+	 <li> Feels like -2°</li>
+</ul>
+<br />
+<hr />
+</div>
+	 <div class="container">
+			 <div class="row">
+					 <div class="col">Sunday 
+						 <div class="row">
+							 <div class="col-4">
+							 ☀🌙
+									 <div class="row">
+											 <div class="col-3">
+12°/1°
+											 </div>
+									 </div>
+							 </div>
+					 </div>  
+					 </div>
+					 <div class="col">Monday
+							 <div class="row">
+									 <div class="col-4">
+											 🌧☁
+											 <div class="row">
+													 <div class="col-3">
+8°/-2°
+													 </div>
+											 </div>
+									 
+									 </div>
+							 </div>
+					 </div>
+					
+					 <div class="col">Tuesday
+							 <div class="row">
+									 <div class="col-4">
+											 🌥☁
+											 <div class="row">
+													 <div class="col-3">
+5°/-2°
+													 </div>
+											 </div>
+									 </div>
+							 </div>
+					 </div>
+					 
+					 <div class="col">Wednesday
+							 <div class="d">
+									 <div class="col-4">
+											 ⛅🌙
+											 <div class="row">
+													 <div class="col-3">
+8°/-3°
+													 </div>
+											 </div>
+									 </div>
+							 </div>
+					 </div>
+					 <div class="col">Thursday
+							 <div class="row">
+									 <div class="col-4">
+											 ☀🌙
+											 <div class="row">
+													 <div class="col-3">
+10°/1°
+													 </div>
+											 </div>
+									 </div>
+							 </div>
+					 </div>
+					 <div class="col">Friday
+							 <div class="row">
+									 <div class="col-4">
+											 🌦🌙
+											 <div class="row">
+													 <div class="col-3">
+12°/3°
+													 </div>
+											 </div>
+									 </div>
+							 </div>
+					 </div>
+					
+	 
+						 </div>
+			</div>
+			</div> 
+    
+	<script src="app.js">
+	</script>
+</body>
+
+</html>
